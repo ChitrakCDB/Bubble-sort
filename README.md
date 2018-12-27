@@ -1,7 +1,7 @@
 In This project we will learn sorting,
 specifically bubble sort of N number of terms.
 1. Normally in main function.
-2. using a recursive function.
+2. Using a recursive function.
 
 Bubble sort is a sorting algorithm that works by repeatedly stepping through lists that need to be sorted,
 comparing each pair of adjacent items and swapping them if they are in the wrong order. 
