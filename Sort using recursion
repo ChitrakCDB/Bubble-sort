@@ -1,0 +1,47 @@
+#include<stdio.h>
+void BubbleSort(int a[],int num);
+main()
+{
+int i,j,num,temp;
+printf("Enter number of elements\n");
+scanf("%d",&num);
+int a[num];
+printf("Enter numbers\n");
+for(i=0;i<num;i++)
+{
+ scanf("%d",&a[i]);
+}
+
+BubbleSort(a,num); //calling of recursive function
+
+printf("Elements after sorting:\n");
+
+for(i=0;i<num;i++)
+{
+ printf("%d\n",a[i]);//printing sorted elements
+}
+
+}
+
+void BubbleSort(int a[],int num)
+{
+ int i,j,temp;
+ i=num;
+ if(i>0) //if condition is true the sorting will start
+     {
+       for(j=0;j<num-1;j++)
+       {
+         if(a[j]>a[j+1])
+          {
+            temp=a[j];
+            a[j]=a[j+1];
+            a[j+1]=temp;
+          }
+        }
+        BubbleSort(a,num-1);
+      }
+      else
+      {
+       return;
+      }
+}
